@@ -1,0 +1,9 @@
+artifact_location: file:///C:/Users/Chandru/OneDrive/Desktop/6th sem/trial/mlruns/702627229505985487
+creation_time: 1786789678210
+effective_trace_archival_retention: null
+experiment_id: '702627229505985487'
+last_update_time: 1786789678210
+lifecycle_stage: active
+name: ECG_Stage5_Hybrid_Centerline
+trace_location: null
+workspace: default

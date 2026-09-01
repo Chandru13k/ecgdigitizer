@@ -1,0 +1,36 @@
+{
+    "input_image": "stage1_output\\Copy of 46_female\\page_001.png",
+    "image_width": 3508,
+    "image_height": 2481,
+    "stage": "stage2_1",
+    "detector_version": "stage2.1",
+    "source_sha256": "77ee4a7a32b20b66ed83bc6d45d4250ce8c4cb706e65d6f82b93fd21b6da303a",
+    "config": {
+        "pad_x": 17,
+        "pad_y": 12,
+        "max_expand_x": 105,
+        "max_expand_y": 74
+    },
+    "ecg_panel_bbox": {
+        "x1": 231,
+        "y1": 369,
+        "x2": 3244,
+        "y2": 2028
+    },
+    "ecg_panel_width": 3013,
+    "ecg_panel_height": 1659,
+    "panel_area_ratio": 0.5743269141943996,
+    "grid_density": 0.4459830187331689,
+    "waveform_density": 0.0187101623325245,
+    "waveform_clipping_detected": true,
+    "panel_completeness_check": "PASS",
+    "overall_detection_score": 1.1791294945635378,
+    "boundary_margin": {
+        "left": 17,
+        "right": 17,
+        "top": 12,
+        "bottom": 12
+    },
+    "estimated_unrelated_content_ratio": 0.42567308580560037,
+    "status": "PASS"
+}

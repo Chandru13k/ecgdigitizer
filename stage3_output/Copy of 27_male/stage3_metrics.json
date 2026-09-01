@@ -1,0 +1,182 @@
+{
+    "stage": "3",
+    "input_width": 3508,
+    "input_height": 2481,
+    "active_panel_width": 2916,
+    "active_panel_height": 1463,
+    "grid_spacing_x": 24.0,
+    "grid_spacing_y": 20,
+    "spacing_confidence_x": 0.09053497942386832,
+    "spacing_confidence_y": 0.9432672590567327,
+    "intersection_candidate_count": 5446,
+    "repaired_pixel_count": 0,
+    "output_width": 2916,
+    "output_height": 1463,
+    "char_removal_expected": 12,
+    "char_removal_detected_before": 8,
+    "char_removal_detected_after": 7,
+    "char_removal_residual_pixels": 0,
+    "char_removal_status": "FAIL",
+    "ecg_pixels_preserved": 99536,
+    "ecg_pixels_lost": 9754,
+    "number_of_vertical_lines_detected": 3,
+    "vertical_lines_details": [
+        {
+            "x_coordinate": 739,
+            "confidence": 1.0
+        },
+        {
+            "x_coordinate": 1459,
+            "confidence": 1.0
+        },
+        {
+            "x_coordinate": 2179,
+            "confidence": 1.0
+        }
+    ],
+    "separator_x_coordinates": [
+        739,
+        1459,
+        2179
+    ],
+    "separator_confidences": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "estimated_separator_spacing": 720.0,
+    "periodicity_confidence": 1.0,
+    "calibration_detection_confidence": 1.0,
+    "calibration_bounding_box": [
+        140,
+        332,
+        960,
+        1463
+    ],
+    "label_retention_details": {
+        "I": "removed",
+        "aVR": "retained",
+        "V1": "retained",
+        "V4": "retained",
+        "II": "retained",
+        "aVL": "retained",
+        "V2": "retained",
+        "V5": "retained",
+        "III": "retained",
+        "aVF": "retained",
+        "V3": "retained",
+        "V6": "retained"
+    },
+    "width_variance_across_leads": 0.0,
+    "mistaken_waveform_as_separator": 0,
+    "candidate_decision_details": {
+        "739": {
+            "x": 739,
+            "conf": 1.0,
+            "status": "ACCEPTED",
+            "reason": "Layout template locked"
+        },
+        "1459": {
+            "x": 1459,
+            "conf": 1.0,
+            "status": "ACCEPTED",
+            "reason": "Layout template locked"
+        },
+        "2179": {
+            "x": 2179,
+            "conf": 1.0,
+            "status": "ACCEPTED",
+            "reason": "Layout template locked"
+        }
+    },
+    "candidate_ecg_pixels": 109290,
+    "separator_pixels_removed": 1932,
+    "calibration_pixels_removed": 6311,
+    "text_pixels_removed": 101,
+    "interpolated_pixels_added": 0,
+    "total_pixels_removed": 9730,
+    "final_ecg_pixels": 99536,
+    "ecg_pixel_loss_ratio": 0.0890291883978406,
+    "per_lead_pixel_retention": {
+        "I": {
+            "candidate_pixels": 27747,
+            "final_pixels": 23408,
+            "removed_pixels": 4339,
+            "retention_ratio": 0.8436227339892601,
+            "geometry_candidate": {
+                "min_y": 105,
+                "max_y": 1426,
+                "amplitude": 1321
+            },
+            "geometry_final": {
+                "min_y": 105,
+                "max_y": 1339,
+                "amplitude": 1234
+            }
+        },
+        "aVR": {
+            "candidate_pixels": 26698,
+            "final_pixels": 22801,
+            "removed_pixels": 3897,
+            "retention_ratio": 0.8540340100382051,
+            "geometry_candidate": {
+                "min_y": 105,
+                "max_y": 1340,
+                "amplitude": 1235
+            },
+            "geometry_final": {
+                "min_y": 105,
+                "max_y": 1340,
+                "amplitude": 1235
+            }
+        },
+        "V1": {
+            "candidate_pixels": 27600,
+            "final_pixels": 27600,
+            "removed_pixels": 0,
+            "retention_ratio": 1.0,
+            "geometry_candidate": {
+                "min_y": 105,
+                "max_y": 1342,
+                "amplitude": 1237
+            },
+            "geometry_final": {
+                "min_y": 105,
+                "max_y": 1342,
+                "amplitude": 1237
+            }
+        },
+        "V4": {
+            "candidate_pixels": 27137,
+            "final_pixels": 27137,
+            "removed_pixels": 0,
+            "retention_ratio": 1.0,
+            "geometry_candidate": {
+                "min_y": 0,
+                "max_y": 1340,
+                "amplitude": 1340
+            },
+            "geometry_final": {
+                "min_y": 0,
+                "max_y": 1340,
+                "amplitude": 1340
+            }
+        }
+    },
+    "residual_separator_pixels": 95,
+    "stage3_5_classifications": {
+        "I": "already_removed",
+        "aVR": "fully fused",
+        "V1": "fully fused",
+        "V4": "fully fused",
+        "II": "fully fused",
+        "aVL": "partially overlapped",
+        "V2": "fully fused",
+        "V5": "fully fused",
+        "III": "fully fused",
+        "aVF": "fully fused",
+        "V3": "fully fused",
+        "V6": "fully fused"
+    },
+    "stage3_5_pixels_removed": 1386
+}

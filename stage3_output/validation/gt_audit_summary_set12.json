@@ -1,0 +1,962 @@
+{
+    "Copy of 19_male": {
+        "separator": {
+            "TP": 10363,
+            "TN": 161945,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9989796155005681,
+            "precision": 0.9833001233513616,
+            "recall": 1.0,
+            "f1": 0.9915797531336714,
+            "iou": 0.9833001233513616,
+            "specificity": 0.9989143911029417
+        },
+        "label": {
+            "TP": 6188,
+            "TN": 277492,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 69761,
+            "preserved_ecg_pixels": 68640,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9839308496151145
+        }
+    },
+    "Copy of 20_male": {
+        "separator": {
+            "TP": 10346,
+            "TN": 161094,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9989744545963081,
+            "precision": 0.9832731419882151,
+            "recall": 1.0,
+            "f1": 0.9915660341192256,
+            "iou": 0.9832731419882151,
+            "specificity": 0.9989086624914739
+        },
+        "label": {
+            "TP": 6188,
+            "TN": 276052,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 68318,
+            "preserved_ecg_pixels": 67197,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9835914400304459
+        }
+    },
+    "Copy of 22_male": {
+        "separator": {
+            "TP": 10607,
+            "TN": 157605,
+            "FP": 180,
+            "FN": 0,
+            "accuracy": 0.9989310656088175,
+            "precision": 0.983313247427459,
+            "recall": 1.0,
+            "f1": 0.991586426100776,
+            "iou": 0.983313247427459,
+            "specificity": 0.9988592071489686
+        },
+        "label": {
+            "TP": 5992,
+            "TN": 266168,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 100805,
+            "preserved_ecg_pixels": 99680,
+            "lost_ecg_pixels": 1125,
+            "ecg_preservation_rate": 0.9888398392936858
+        }
+    },
+    "Copy of 23_male": {
+        "separator": {
+            "TP": 10786,
+            "TN": 163360,
+            "FP": 198,
+            "FN": 0,
+            "accuracy": 0.9988643142293397,
+            "precision": 0.9819737800437,
+            "recall": 1.0,
+            "f1": 0.9909049150206707,
+            "iou": 0.9819737800437,
+            "specificity": 0.9987894202668167
+        },
+        "label": {
+            "TP": 5906,
+            "TN": 283534,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 67726,
+            "preserved_ecg_pixels": 66583,
+            "lost_ecg_pixels": 1143,
+            "ecg_preservation_rate": 0.983123172784455
+        }
+    },
+    "Copy of 24_male": {
+        "separator": {
+            "TP": 10165,
+            "TN": 172770,
+            "FP": 152,
+            "FN": 185,
+            "accuracy": 0.9981612030206469,
+            "precision": 0.9852670349907919,
+            "recall": 0.9821256038647344,
+            "f1": 0.9836938113901389,
+            "iou": 0.9679108741192154,
+            "specificity": 0.9991209909670256
+        },
+        "label": {
+            "TP": 5640,
+            "TN": 309720,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 120470,
+            "preserved_ecg_pixels": 119373,
+            "lost_ecg_pixels": 1097,
+            "ecg_preservation_rate": 0.990893998505852
+        }
+    },
+    "Copy of 25_male": {
+        "separator": {
+            "TP": 10346,
+            "TN": 165682,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9990011577489728,
+            "precision": 0.9832731419882151,
+            "recall": 1.0,
+            "f1": 0.9915660341192256,
+            "iou": 0.9832731419882151,
+            "specificity": 0.9989388513065394
+        },
+        "label": {
+            "TP": 6188,
+            "TN": 289012,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 97844,
+            "preserved_ecg_pixels": 96723,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9885429867953068
+        }
+    },
+    "Copy of 27_female": {
+        "separator": {
+            "TP": 10346,
+            "TN": 157870,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9989548197063993,
+            "precision": 0.9832731419882151,
+            "recall": 1.0,
+            "f1": 0.9915660341192256,
+            "iou": 0.9832731419882151,
+            "specificity": 0.9988864001619782
+        },
+        "label": {
+            "TP": 5900,
+            "TN": 266260,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 79678,
+            "preserved_ecg_pixels": 78557,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9859308717588293
+        }
+    },
+    "Copy of 27_male": {
+        "separator": {
+            "TP": 2902,
+            "TN": 169569,
+            "FP": 194,
+            "FN": 8747,
+            "accuracy": 0.9507143959605759,
+            "precision": 0.9373385012919897,
+            "recall": 0.24912009614559188,
+            "f1": 0.39362495761275,
+            "iou": 0.245039263700076,
+            "specificity": 0.9988572303741098
+        },
+        "label": {
+            "TP": 5646,
+            "TN": 303563,
+            "FP": 391,
+            "FN": 0,
+            "accuracy": 0.9987370801033592,
+            "precision": 0.9352327314891502,
+            "recall": 1.0,
+            "f1": 0.9665325686895488,
+            "iou": 0.9352327314891502,
+            "specificity": 0.9987136211400409
+        },
+        "preservation": {
+            "total_ecg_pixels": 91995,
+            "preserved_ecg_pixels": 90144,
+            "lost_ecg_pixels": 1851,
+            "ecg_preservation_rate": 0.9798793412685473
+        }
+    },
+    "Copy of 28_female": {
+        "separator": {
+            "TP": 10346,
+            "TN": 157870,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9989548197063993,
+            "precision": 0.9832731419882151,
+            "recall": 1.0,
+            "f1": 0.9915660341192256,
+            "iou": 0.9832731419882151,
+            "specificity": 0.9988864001619782
+        },
+        "label": {
+            "TP": 6188,
+            "TN": 265972,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 70702,
+            "preserved_ecg_pixels": 69581,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9841447200927838
+        }
+    },
+    "Copy of 28_male": {
+        "separator": {
+            "TP": 10497,
+            "TN": 170739,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9990298326461314,
+            "precision": 0.9835097910615572,
+            "recall": 1.0,
+            "f1": 0.9916863486065186,
+            "iou": 0.9835097910615572,
+            "specificity": 0.9989702483690723
+        },
+        "label": {
+            "TP": 6188,
+            "TN": 303412,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 80534,
+            "preserved_ecg_pixels": 79413,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9860804132416122
+        }
+    },
+    "Copy of 33_male": {
+        "separator": {
+            "TP": 10346,
+            "TN": 157870,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9989548197063993,
+            "precision": 0.9832731419882151,
+            "recall": 1.0,
+            "f1": 0.9915660341192256,
+            "iou": 0.9832731419882151,
+            "specificity": 0.9988864001619782
+        },
+        "label": {
+            "TP": 6188,
+            "TN": 265972,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 76591,
+            "preserved_ecg_pixels": 75470,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9853638155919103
+        }
+    },
+    "Copy of 34_male": {
+        "separator": {
+            "TP": 10567,
+            "TN": 157649,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9989548197063993,
+            "precision": 0.9836172391324584,
+            "recall": 1.0,
+            "f1": 0.9917409666823087,
+            "iou": 0.9836172391324584,
+            "specificity": 0.9988848408046888
+        },
+        "label": {
+            "TP": 5811,
+            "TN": 266349,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 73231,
+            "preserved_ecg_pixels": 72110,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9846922751293851
+        }
+    },
+    "Copy of 35_male": {
+        "separator": {
+            "TP": 10659,
+            "TN": 158425,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9989601796053409,
+            "precision": 0.983756345177665,
+            "recall": 1.0,
+            "f1": 0.9918116683725691,
+            "iou": 0.983756345177665,
+            "specificity": 0.9988902970346971
+        },
+        "label": {
+            "TP": 6188,
+            "TN": 268852,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 80820,
+            "preserved_ecg_pixels": 79699,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9861296708735462
+        }
+    },
+    "Copy of 37_male": {
+        "separator": {
+            "TP": 10345,
+            "TN": 157871,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9989548197063993,
+            "precision": 0.9832715521338276,
+            "recall": 1.0,
+            "f1": 0.9915652257260615,
+            "iou": 0.9832715521338276,
+            "specificity": 0.9988864072079824
+        },
+        "label": {
+            "TP": 5925,
+            "TN": 266235,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 64925,
+            "preserved_ecg_pixels": 63804,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9827339237581825
+        }
+    },
+    "Copy of 38_male": {
+        "separator": {
+            "TP": 10347,
+            "TN": 157869,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9989548197063993,
+            "precision": 0.9832747315404352,
+            "recall": 1.0,
+            "f1": 0.991566842357451,
+            "iou": 0.9832747315404352,
+            "specificity": 0.9988863931158847
+        },
+        "label": {
+            "TP": 6188,
+            "TN": 265972,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 65770,
+            "preserved_ecg_pixels": 64649,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9829557549034514
+        }
+    },
+    "Copy of 40_female": {
+        "separator": {
+            "TP": 10356,
+            "TN": 157860,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9989548197063993,
+            "precision": 0.9832890239270794,
+            "recall": 1.0,
+            "f1": 0.991574109536576,
+            "iou": 0.9832890239270794,
+            "specificity": 0.9988863296970311
+        },
+        "label": {
+            "TP": 6188,
+            "TN": 265972,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 67661,
+            "preserved_ecg_pixels": 66540,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9834321100781839
+        }
+    },
+    "Copy of 41_female": {
+        "separator": {
+            "TP": 10344,
+            "TN": 157872,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9989548197063993,
+            "precision": 0.9832699619771863,
+            "recall": 1.0,
+            "f1": 0.9915644171779141,
+            "iou": 0.9832699619771863,
+            "specificity": 0.9988864142538976
+        },
+        "label": {
+            "TP": 6188,
+            "TN": 265972,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 63684,
+            "preserved_ecg_pixels": 62563,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9823974624709503
+        }
+    },
+    "Copy of 41_male": {
+        "separator": {
+            "TP": 10348,
+            "TN": 162828,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.998984724721953,
+            "precision": 0.9832763207905739,
+            "recall": 1.0,
+            "f1": 0.9915676504407819,
+            "iou": 0.9832763207905739,
+            "specificity": 0.9989202718951682
+        },
+        "label": {
+            "TP": 5646,
+            "TN": 280914,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 86429,
+            "preserved_ecg_pixels": 85308,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9870298163810758
+        }
+    },
+    "Copy of 42_female": {
+        "separator": {
+            "TP": 10437,
+            "TN": 159143,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9989632177949528,
+            "precision": 0.9834165645905965,
+            "recall": 1.0,
+            "f1": 0.9916389548693586,
+            "iou": 0.9834165645905965,
+            "specificity": 0.9988952981125917
+        },
+        "label": {
+            "TP": 5913,
+            "TN": 270567,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 81906,
+            "preserved_ecg_pixels": 80785,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9863135789807829
+        }
+    },
+    "Copy of 42_male": {
+        "separator": {
+            "TP": 10341,
+            "TN": 157875,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9989548197063993,
+            "precision": 0.9832651896928782,
+            "recall": 1.0,
+            "f1": 0.991561990603126,
+            "iou": 0.9832651896928782,
+            "specificity": 0.9988864353911079
+        },
+        "label": {
+            "TP": 6188,
+            "TN": 265972,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 81018,
+            "preserved_ecg_pixels": 79897,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9861635685896961
+        }
+    },
+    "Copy of 46_female": {
+        "separator": {
+            "TP": 10428,
+            "TN": 157788,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9989548197063993,
+            "precision": 0.983402489626556,
+            "recall": 1.0,
+            "f1": 0.9916317991631798,
+            "iou": 0.983402489626556,
+            "specificity": 0.9988858220860449
+        },
+        "label": {
+            "TP": 6188,
+            "TN": 265972,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 70643,
+            "preserved_ecg_pixels": 69522,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9841314779949889
+        }
+    },
+    "Copy of 48_female": {
+        "separator": {
+            "TP": 10595,
+            "TN": 159357,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9989654848114361,
+            "precision": 0.9836598273140841,
+            "recall": 1.0,
+            "f1": 0.991762613498081,
+            "iou": 0.9836598273140841,
+            "specificity": 0.9988967799765566
+        },
+        "label": {
+            "TP": 5913,
+            "TN": 272007,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 87569,
+            "preserved_ecg_pixels": 86448,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9871986661946579
+        }
+    },
+    "Copy of 48_male": {
+        "separator": {
+            "TP": 10362,
+            "TN": 172114,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.999036418982546,
+            "precision": 0.9832985386221295,
+            "recall": 1.0,
+            "f1": 0.991578947368421,
+            "iou": 0.9832985386221295,
+            "specificity": 0.9989784665389749
+        },
+        "label": {
+            "TP": 5352,
+            "TN": 308568,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 113270,
+            "preserved_ecg_pixels": 112149,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9901032930166858
+        }
+    },
+    "Copy of 49_male": {
+        "separator": {
+            "TP": 10344,
+            "TN": 157872,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9989548197063993,
+            "precision": 0.9832699619771863,
+            "recall": 1.0,
+            "f1": 0.9915644171779141,
+            "iou": 0.9832699619771863,
+            "specificity": 0.9988864142538976
+        },
+        "label": {
+            "TP": 6188,
+            "TN": 265972,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 73230,
+            "preserved_ecg_pixels": 72109,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9846920660931312
+        }
+    },
+    "Copy of 50_female": {
+        "separator": {
+            "TP": 10344,
+            "TN": 163328,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9989876213703925,
+            "precision": 0.9832699619771863,
+            "recall": 1.0,
+            "f1": 0.9915644171779141,
+            "iou": 0.9832699619771863,
+            "specificity": 0.9989235737351991
+        },
+        "label": {
+            "TP": 6188,
+            "TN": 281812,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 66980,
+            "preserved_ecg_pixels": 65859,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.983263660794267
+        }
+    },
+    "Copy of 50_male": {
+        "separator": {
+            "TP": 10515,
+            "TN": 163157,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9989876213703925,
+            "precision": 0.983537554952764,
+            "recall": 1.0,
+            "f1": 0.9917004621333585,
+            "iou": 0.983537554952764,
+            "specificity": 0.9989224467805037
+        },
+        "label": {
+            "TP": 5345,
+            "TN": 282655,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 105824,
+            "preserved_ecg_pixels": 104703,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9894069398246145
+        }
+    },
+    "Copy of 54_male": {
+        "separator": {
+            "TP": 10140,
+            "TN": 160099,
+            "FP": 152,
+            "FN": 233,
+            "accuracy": 0.9977435765191298,
+            "precision": 0.9852312475709288,
+            "recall": 0.977537838619493,
+            "f1": 0.981369465279458,
+            "iou": 0.9634204275534441,
+            "specificity": 0.9990514879782342
+        },
+        "label": {
+            "TP": 5913,
+            "TN": 273447,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 85871,
+            "preserved_ecg_pixels": 84774,
+            "lost_ecg_pixels": 1097,
+            "ecg_preservation_rate": 0.9872250235818845
+        }
+    },
+    "Copy of 55_male": {
+        "separator": {
+            "TP": 10560,
+            "TN": 165334,
+            "FP": 186,
+            "FN": 0,
+            "accuracy": 0.9989436619718309,
+            "precision": 0.9826912339475153,
+            "recall": 1.0,
+            "f1": 0.9912700647704872,
+            "iou": 0.9826912339475153,
+            "specificity": 0.9988762687288545
+        },
+        "label": {
+            "TP": 5217,
+            "TN": 289983,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 90069,
+            "preserved_ecg_pixels": 88938,
+            "lost_ecg_pixels": 1131,
+            "ecg_preservation_rate": 0.987442960397029
+        }
+    },
+    "Copy of 58_male": {
+        "separator": {
+            "TP": 10530,
+            "TN": 170086,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9990265055975928,
+            "precision": 0.9835606202129646,
+            "recall": 1.0,
+            "f1": 0.9917121868525145,
+            "iou": 0.9835606202129646,
+            "specificity": 0.9989662989980148
+        },
+        "label": {
+            "TP": 5925,
+            "TN": 302235,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 77493,
+            "preserved_ecg_pixels": 76372,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9855341772805286
+        }
+    },
+    "Copy of 60_male": {
+        "separator": {
+            "TP": 10345,
+            "TN": 157871,
+            "FP": 176,
+            "FN": 0,
+            "accuracy": 0.9989548197063993,
+            "precision": 0.9832715521338276,
+            "recall": 1.0,
+            "f1": 0.9915652257260615,
+            "iou": 0.9832715521338276,
+            "specificity": 0.9988864072079824
+        },
+        "label": {
+            "TP": 6188,
+            "TN": 265972,
+            "FP": 0,
+            "FN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "iou": 1.0,
+            "specificity": 1.0
+        },
+        "preservation": {
+            "total_ecg_pixels": 61595,
+            "preserved_ecg_pixels": 60474,
+            "lost_ecg_pixels": 1121,
+            "ecg_preservation_rate": 0.9818004708174365
+        }
+    }
+}

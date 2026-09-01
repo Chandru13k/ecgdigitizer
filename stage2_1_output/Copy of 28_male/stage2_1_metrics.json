@@ -1,0 +1,36 @@
+{
+    "input_image": "stage1_output\\Copy of 28_male\\page_001.png",
+    "image_width": 3508,
+    "image_height": 2481,
+    "stage": "stage2_1",
+    "detector_version": "stage2.1",
+    "source_sha256": "05a1698c7a636c594ea3e23c0f66c3e826775f7dd85dea0c8fac2e589467cd30",
+    "config": {
+        "pad_x": 17,
+        "pad_y": 12,
+        "max_expand_x": 105,
+        "max_expand_y": 74
+    },
+    "ecg_panel_bbox": {
+        "x1": 231,
+        "y1": 369,
+        "x2": 3246,
+        "y2": 2026
+    },
+    "ecg_panel_width": 3015,
+    "ecg_panel_height": 1657,
+    "panel_area_ratio": 0.57401530997037,
+    "grid_density": 0.44764509778606465,
+    "waveform_density": 0.02060648277421983,
+    "waveform_clipping_detected": true,
+    "panel_completeness_check": "PASS",
+    "overall_detection_score": 1.1822978505573143,
+    "boundary_margin": {
+        "left": 17,
+        "right": 17,
+        "top": 12,
+        "bottom": 12
+    },
+    "estimated_unrelated_content_ratio": 0.42598469002963,
+    "status": "PASS"
+}

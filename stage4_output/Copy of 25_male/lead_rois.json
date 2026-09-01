@@ -1,0 +1,145 @@
+{
+    "I": {
+        "lead_name": "I",
+        "row": 0,
+        "column": 0,
+        "x_start": 0,
+        "x_end": 739,
+        "y_start": 0,
+        "y_end": 302,
+        "baseline_y": null,
+        "baseline_source": "not_estimated_in_stage4"
+    },
+    "II": {
+        "lead_name": "II",
+        "row": 1,
+        "column": 0,
+        "x_start": 0,
+        "x_end": 739,
+        "y_start": 302,
+        "y_end": 692,
+        "baseline_y": null,
+        "baseline_source": "not_estimated_in_stage4"
+    },
+    "III": {
+        "lead_name": "III",
+        "row": 2,
+        "column": 0,
+        "x_start": 0,
+        "x_end": 739,
+        "y_start": 692,
+        "y_end": 1022,
+        "baseline_y": null,
+        "baseline_source": "not_estimated_in_stage4"
+    },
+    "aVR": {
+        "lead_name": "aVR",
+        "row": 0,
+        "column": 1,
+        "x_start": 739,
+        "x_end": 1459,
+        "y_start": 0,
+        "y_end": 302,
+        "baseline_y": null,
+        "baseline_source": "not_estimated_in_stage4"
+    },
+    "aVL": {
+        "lead_name": "aVL",
+        "row": 1,
+        "column": 1,
+        "x_start": 739,
+        "x_end": 1459,
+        "y_start": 302,
+        "y_end": 692,
+        "baseline_y": null,
+        "baseline_source": "not_estimated_in_stage4"
+    },
+    "aVF": {
+        "lead_name": "aVF",
+        "row": 2,
+        "column": 1,
+        "x_start": 739,
+        "x_end": 1459,
+        "y_start": 692,
+        "y_end": 1022,
+        "baseline_y": null,
+        "baseline_source": "not_estimated_in_stage4"
+    },
+    "V1": {
+        "lead_name": "V1",
+        "row": 0,
+        "column": 2,
+        "x_start": 1459,
+        "x_end": 2179,
+        "y_start": 0,
+        "y_end": 302,
+        "baseline_y": null,
+        "baseline_source": "not_estimated_in_stage4"
+    },
+    "V2": {
+        "lead_name": "V2",
+        "row": 1,
+        "column": 2,
+        "x_start": 1459,
+        "x_end": 2179,
+        "y_start": 302,
+        "y_end": 715,
+        "baseline_y": null,
+        "baseline_source": "not_estimated_in_stage4"
+    },
+    "V3": {
+        "lead_name": "V3",
+        "row": 2,
+        "column": 2,
+        "x_start": 1459,
+        "x_end": 2179,
+        "y_start": 715,
+        "y_end": 1043,
+        "baseline_y": null,
+        "baseline_source": "not_estimated_in_stage4"
+    },
+    "V4": {
+        "lead_name": "V4",
+        "row": 0,
+        "column": 3,
+        "x_start": 2179,
+        "x_end": 2916,
+        "y_start": 0,
+        "y_end": 302,
+        "baseline_y": null,
+        "baseline_source": "not_estimated_in_stage4"
+    },
+    "V5": {
+        "lead_name": "V5",
+        "row": 1,
+        "column": 3,
+        "x_start": 2179,
+        "x_end": 2916,
+        "y_start": 302,
+        "y_end": 692,
+        "baseline_y": null,
+        "baseline_source": "not_estimated_in_stage4"
+    },
+    "V6": {
+        "lead_name": "V6",
+        "row": 2,
+        "column": 3,
+        "x_start": 2179,
+        "x_end": 2916,
+        "y_start": 692,
+        "y_end": 1022,
+        "baseline_y": null,
+        "baseline_source": "not_estimated_in_stage4"
+    },
+    "Rhythm_II": {
+        "lead_name": "Rhythm_II",
+        "row": 3,
+        "column": 0,
+        "x_start": 0,
+        "x_end": 2916,
+        "y_start": 1043,
+        "y_end": 1421,
+        "baseline_y": null,
+        "baseline_source": "not_estimated_in_stage4"
+    }
+}

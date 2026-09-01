@@ -1,0 +1,9 @@
+artifact_location: file:///C:/Users/Chandru/OneDrive/Desktop/6th sem/trial/mlruns/421255307279526596
+creation_time: 1786791807915
+effective_trace_archival_retention: null
+experiment_id: '421255307279526596'
+last_update_time: 1786791807915
+lifecycle_stage: active
+name: ECG_Stage5_Candidate_Scoring
+trace_location: null
+workspace: default

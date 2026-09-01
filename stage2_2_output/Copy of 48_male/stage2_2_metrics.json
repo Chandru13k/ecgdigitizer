@@ -1,0 +1,82 @@
+{
+    "stage": "stage2_2",
+    "source_sha256": "62145d7c08515990989f3a3408a58df32966d1fdff38d423e9ba49fdd69887b4",
+    "stage2_1_bbox": {
+        "x1": 234,
+        "y1": 370,
+        "x2": 3243,
+        "y2": 2025
+    },
+    "stage2_2_bbox": {
+        "x1": 287,
+        "y1": 403,
+        "x2": 3203,
+        "y2": 1876
+    },
+    "normalized_bbox": {
+        "x1_norm": 0.08181299885974914,
+        "y1_norm": 0.16243450221684805,
+        "x2_norm": 0.9130558722919042,
+        "y2_norm": 0.7561467150342603
+    },
+    "grid_x1": 287,
+    "grid_y1": 398,
+    "grid_x2": 3203,
+    "grid_y2": 1994,
+    "active_waveform_y1": 403,
+    "active_waveform_y2": 1876,
+    "active_x1": 287,
+    "active_x2": 3203,
+    "detected_grid_spacing_x": 12.0,
+    "detected_grid_spacing_y": 12.0,
+    "detected_row_count": 3,
+    "detected_rows": [
+        {
+            "normalized_y1": 0.16968964127367997,
+            "normalized_y2": 0.313180169286578,
+            "normalized_x1": 0.08694412770809579,
+            "normalized_x2": 0.9082098061573546,
+            "component_count": 1
+        },
+        {
+            "normalized_y1": 0.32769044740024184,
+            "normalized_y2": 0.6174929463925837,
+            "normalized_x1": 0.08694412770809579,
+            "normalized_x2": 0.9082098061573546,
+            "component_count": 1
+        },
+        {
+            "normalized_y1": 0.6469165659008465,
+            "normalized_y2": 0.7488915759774285,
+            "normalized_x1": 0.08694412770809579,
+            "normalized_x2": 0.9082098061573546,
+            "component_count": 1
+        }
+    ],
+    "calibration_candidates": [],
+    "rejected_calibration_components": [],
+    "structural_grid_bbox": {
+        "x1": 287,
+        "y1": 398,
+        "x2": 3203,
+        "y2": 1994
+    },
+    "active_ecg_panel_bbox": {
+        "x1": 287,
+        "y1": 403,
+        "x2": 3203,
+        "y2": 1876
+    },
+    "delta": {
+        "x1": 53,
+        "y1": 33,
+        "x2": -40,
+        "y2": -149
+    },
+    "boundary_status": {
+        "left": "tightened",
+        "top": "tightened",
+        "right": "tightened",
+        "bottom": "tightened"
+    }
+}

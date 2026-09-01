@@ -1,0 +1,9 @@
+artifact_location: file:///C:/Users/Chandru/OneDrive/Desktop/6th sem/trial/mlruns/463266451690476236
+creation_time: 1786811083960
+effective_trace_archival_retention: null
+experiment_id: '463266451690476236'
+last_update_time: 1786811083960
+lifecycle_stage: active
+name: ECG_Stage3_Separator_Segmentation
+trace_location: null
+workspace: default

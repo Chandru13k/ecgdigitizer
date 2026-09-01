@@ -1,0 +1,36 @@
+{
+    "input_image": "stage1_output\\Copy of 42_female\\page_001.png",
+    "image_width": 3508,
+    "image_height": 2481,
+    "stage": "stage2_1",
+    "detector_version": "stage2.1",
+    "source_sha256": "dae3357010411ffb9997f25944b9f51644d8a5c00d3155bbab7aed419fa71f89",
+    "config": {
+        "pad_x": 17,
+        "pad_y": 12,
+        "max_expand_x": 105,
+        "max_expand_y": 74
+    },
+    "ecg_panel_bbox": {
+        "x1": 232,
+        "y1": 369,
+        "x2": 3244,
+        "y2": 2025
+    },
+    "ecg_panel_width": 3012,
+    "ecg_panel_height": 1656,
+    "panel_area_ratio": 0.5730980767401235,
+    "grid_density": 0.4493641777495493,
+    "waveform_density": 0.020677354992269248,
+    "waveform_clipping_detected": true,
+    "panel_completeness_check": "PASS",
+    "overall_detection_score": 1.1852773938691603,
+    "boundary_margin": {
+        "left": 17,
+        "right": 17,
+        "top": 12,
+        "bottom": 12
+    },
+    "estimated_unrelated_content_ratio": 0.4269019232598765,
+    "status": "PASS"
+}

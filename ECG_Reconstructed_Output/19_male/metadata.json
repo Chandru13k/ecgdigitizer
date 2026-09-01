@@ -1,0 +1,172 @@
+{
+    "status": "FAIL",
+    "csv_npy_validation_max_diff": 1.7763568394002505e-15,
+    "reports": {
+        "I": {
+            "status": "FAIL",
+            "confidence": 0.0,
+            "digitized_hr": "INVALID",
+            "num_beats": "INVALID",
+            "metrics": {
+                "continuity": 0.0,
+                "interpolated_ratio": 1.0,
+                "straight_line_ratio": 0.0,
+                "grid_contamination": 0.0
+            },
+            "reason": "Failed quality gate: continuity=0.00, interpolation=1.00"
+        },
+        "aVR": {
+            "status": "FAIL",
+            "confidence": 0.0,
+            "digitized_hr": "INVALID",
+            "num_beats": "INVALID",
+            "metrics": {
+                "continuity": 0.0,
+                "interpolated_ratio": 1.0,
+                "straight_line_ratio": 0.0,
+                "grid_contamination": 0.0
+            },
+            "reason": "Failed quality gate: continuity=0.00, interpolation=1.00"
+        },
+        "V1": {
+            "status": "PASS",
+            "confidence": 0.999245283018868,
+            "digitized_hr": Infinity,
+            "num_beats": 1325,
+            "metrics": {
+                "continuity": 0.999245283018868,
+                "interpolated_ratio": 0.0007547169811320531,
+                "straight_line_ratio": 0.0,
+                "grid_contamination": 0.0
+            }
+        },
+        "V4": {
+            "status": "PASS",
+            "confidence": 0.9990917347865577,
+            "digitized_hr": Infinity,
+            "num_beats": 1101,
+            "metrics": {
+                "continuity": 0.9990917347865577,
+                "interpolated_ratio": 0.0009082652134423386,
+                "straight_line_ratio": 0.0,
+                "grid_contamination": 0.0
+            }
+        },
+        "II": {
+            "status": "FAIL",
+            "confidence": 0.0,
+            "digitized_hr": "INVALID",
+            "num_beats": "INVALID",
+            "metrics": {
+                "continuity": 0.0,
+                "interpolated_ratio": 1.0,
+                "straight_line_ratio": 0.0,
+                "grid_contamination": 0.0
+            },
+            "reason": "Failed quality gate: continuity=0.00, interpolation=1.00"
+        },
+        "aVL": {
+            "status": "FAIL",
+            "confidence": 0.0,
+            "digitized_hr": "INVALID",
+            "num_beats": "INVALID",
+            "metrics": {
+                "continuity": 0.0,
+                "interpolated_ratio": 1.0,
+                "straight_line_ratio": 0.0,
+                "grid_contamination": 0.0
+            },
+            "reason": "Failed quality gate: continuity=0.00, interpolation=1.00"
+        },
+        "V2": {
+            "status": "FAIL",
+            "confidence": 0.0,
+            "digitized_hr": "INVALID",
+            "num_beats": "INVALID",
+            "metrics": {
+                "continuity": 0.0,
+                "interpolated_ratio": 1.0,
+                "straight_line_ratio": 0.0,
+                "grid_contamination": 0.0
+            },
+            "reason": "Failed quality gate: continuity=0.00, interpolation=1.00"
+        },
+        "V5": {
+            "status": "FAIL",
+            "confidence": 0.0,
+            "digitized_hr": "INVALID",
+            "num_beats": "INVALID",
+            "metrics": {
+                "continuity": 0.0,
+                "interpolated_ratio": 1.0,
+                "straight_line_ratio": 0.0,
+                "grid_contamination": 0.0
+            },
+            "reason": "Failed quality gate: continuity=0.00, interpolation=1.00"
+        },
+        "III": {
+            "status": "FAIL",
+            "confidence": 0.0,
+            "digitized_hr": "INVALID",
+            "num_beats": "INVALID",
+            "metrics": {
+                "continuity": 0.0,
+                "interpolated_ratio": 1.0,
+                "straight_line_ratio": 0.0,
+                "grid_contamination": 0.0
+            },
+            "reason": "Failed quality gate: continuity=0.00, interpolation=1.00"
+        },
+        "aVF": {
+            "status": "FAIL",
+            "confidence": 0.0,
+            "digitized_hr": "INVALID",
+            "num_beats": "INVALID",
+            "metrics": {
+                "continuity": 0.0,
+                "interpolated_ratio": 1.0,
+                "straight_line_ratio": 0.0,
+                "grid_contamination": 0.0
+            },
+            "reason": "Failed quality gate: continuity=0.00, interpolation=1.00"
+        },
+        "V3": {
+            "status": "FAIL",
+            "confidence": 0.0,
+            "digitized_hr": "INVALID",
+            "num_beats": "INVALID",
+            "metrics": {
+                "continuity": 0.0,
+                "interpolated_ratio": 1.0,
+                "straight_line_ratio": 0.0,
+                "grid_contamination": 0.0
+            },
+            "reason": "Failed quality gate: continuity=0.00, interpolation=1.00"
+        },
+        "V6": {
+            "status": "FAIL",
+            "confidence": 0.0,
+            "digitized_hr": "INVALID",
+            "num_beats": "INVALID",
+            "metrics": {
+                "continuity": 0.0,
+                "interpolated_ratio": 1.0,
+                "straight_line_ratio": 0.0,
+                "grid_contamination": 0.0
+            },
+            "reason": "Failed quality gate: continuity=0.00, interpolation=1.00"
+        },
+        "II_rhythm": {
+            "status": "PASS",
+            "confidence": 0.9803306727480046,
+            "digitized_hr": Infinity,
+            "num_beats": 3508,
+            "metrics": {
+                "continuity": 0.9803306727480046,
+                "interpolated_ratio": 0.01966932725199544,
+                "straight_line_ratio": 0.0,
+                "grid_contamination": 0.0
+            }
+        }
+    }
+}

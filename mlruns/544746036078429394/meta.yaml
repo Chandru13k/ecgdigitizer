@@ -1,0 +1,9 @@
+artifact_location: file:///C:/Users/Chandru/OneDrive/Desktop/6th sem/trial/mlruns/544746036078429394
+creation_time: 1786790051355
+effective_trace_archival_retention: null
+experiment_id: '544746036078429394'
+last_update_time: 1786790051355
+lifecycle_stage: active
+name: ECG_Stage5_Peak_Precision
+trace_location: null
+workspace: default

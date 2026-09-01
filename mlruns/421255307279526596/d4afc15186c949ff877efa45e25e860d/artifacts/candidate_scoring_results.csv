@@ -1,0 +1,17 @@
+case,lead,mode,global_mae
+Copy of 19_male,aVF,baseline,0.19350849132701245
+Copy of 19_male,aVF,scoring,0.26053030129070975
+Copy of 19_male,V2,baseline,0.23420584641478853
+Copy of 19_male,V2,scoring,0.3708751664308984
+Copy of 19_male,V3,baseline,0.26787371988736636
+Copy of 19_male,V3,scoring,0.4187370070396057
+Copy of 19_male,V4,baseline,0.17321823417991994
+Copy of 19_male,V4,scoring,0.38098139235642486
+Copy of 20_male,aVF,baseline,0.2091121558120693
+Copy of 20_male,aVF,scoring,0.3075710245398081
+Copy of 20_male,V2,baseline,0.2628206202464025
+Copy of 20_male,V2,scoring,0.3778914266268121
+Copy of 20_male,V3,baseline,0.2419087987376611
+Copy of 20_male,V3,scoring,0.4437208283007936
+Copy of 20_male,V4,baseline,0.1840096764493246
+Copy of 20_male,V4,scoring,0.4939889782683201

@@ -1,0 +1,9 @@
+landmark,beat_index,x_pixel,y_pixel,confidence,status,detectors_supporting,detectors_disagreeing,raw_candidate_x,neurokit_candidate_x,cwt_candidate_x
+R_peak,0,80,157.12517515179823,0.6,uncertain,raw_morphology,neurokit,80,,
+S_nadir,0,89,224.00481099656358,0.9,accepted,raw_morphology,none,89,,
+R_peak,1,268,150.70883534136547,0.9,accepted,"raw_morphology,neurokit",none,268,268.0,
+S_nadir,1,276,225.73363228699552,0.9,accepted,raw_morphology,none,276,,
+R_peak,2,463,147.83333333333334,0.9,accepted,"raw_morphology,neurokit",none,463,463.0,
+S_nadir,2,471,229.671285604311,0.9,accepted,raw_morphology,none,471,,
+R_peak,3,646,158.44477172312224,0.9,accepted,"raw_morphology,neurokit",none,646,646.0,
+S_nadir,3,654,229.44421487603304,0.9,accepted,raw_morphology,none,654,,

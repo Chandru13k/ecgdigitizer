@@ -1,0 +1,89 @@
+{
+    "stage": "stage2_2",
+    "source_sha256": "6076512a0c67bbfe2bd78c964c99de493f6505080a9a035bbaf8c55c9db1dd4a",
+    "stage2_1_bbox": {
+        "x1": 233,
+        "y1": 370,
+        "x2": 3243,
+        "y2": 2025
+    },
+    "stage2_2_bbox": {
+        "x1": 287,
+        "y1": 398,
+        "x2": 3203,
+        "y2": 1876
+    },
+    "normalized_bbox": {
+        "x1_norm": 0.08181299885974914,
+        "y1_norm": 0.16041918581217252,
+        "x2_norm": 0.9130558722919042,
+        "y2_norm": 0.7561467150342603
+    },
+    "grid_x1": 287,
+    "grid_y1": 398,
+    "grid_x2": 3203,
+    "grid_y2": 1994,
+    "active_waveform_y1": 398,
+    "active_waveform_y2": 1876,
+    "active_x1": 287,
+    "active_x2": 3203,
+    "detected_grid_spacing_x": 12.0,
+    "detected_grid_spacing_y": 12.0,
+    "detected_row_count": 4,
+    "detected_rows": [
+        {
+            "normalized_y1": 0.16767432486900444,
+            "normalized_y2": 0.3301088270858525,
+            "normalized_x1": 0.08694412770809579,
+            "normalized_x2": 0.9082098061573546,
+            "component_count": 1
+        },
+        {
+            "normalized_y1": 0.2861749294639258,
+            "normalized_y2": 0.5223700120918985,
+            "normalized_x1": 0.08694412770809579,
+            "normalized_x2": 0.9082098061573546,
+            "component_count": 1
+        },
+        {
+            "normalized_y1": 0.44740024183796856,
+            "normalized_y2": 0.6041918581217252,
+            "normalized_x1": 0.08694412770809579,
+            "normalized_x2": 0.9082098061573546,
+            "component_count": 1
+        },
+        {
+            "normalized_y1": 0.5965336557839581,
+            "normalized_y2": 0.7488915759774285,
+            "normalized_x1": 0.08694412770809579,
+            "normalized_x2": 0.9082098061573546,
+            "component_count": 1
+        }
+    ],
+    "calibration_candidates": [],
+    "rejected_calibration_components": [],
+    "structural_grid_bbox": {
+        "x1": 287,
+        "y1": 398,
+        "x2": 3203,
+        "y2": 1994
+    },
+    "active_ecg_panel_bbox": {
+        "x1": 287,
+        "y1": 398,
+        "x2": 3203,
+        "y2": 1876
+    },
+    "delta": {
+        "x1": 54,
+        "y1": 28,
+        "x2": -40,
+        "y2": -149
+    },
+    "boundary_status": {
+        "left": "tightened",
+        "top": "tightened",
+        "right": "tightened",
+        "bottom": "tightened"
+    }
+}

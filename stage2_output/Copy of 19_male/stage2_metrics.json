@@ -1,0 +1,51 @@
+{
+    "input_image": "stage1_output\\Copy of 19_male\\page_001.png",
+    "image_width": 3508,
+    "image_height": 2481,
+    "ecg_panel_bbox": {
+        "x1": 247,
+        "y1": 381,
+        "x2": 3227,
+        "y2": 2015
+    },
+    "grid_boundary": {
+        "x1": 247,
+        "y1": 381,
+        "x2": 3227,
+        "y2": 2015
+    },
+    "ecg_panel_width": 2980,
+    "ecg_panel_height": 1634,
+    "panel_area_ratio": 0.5594766519734704,
+    "grid_density": 0.456712436233396,
+    "waveform_density": 0.01856871185298974,
+    "waveform_clipping_detected": false,
+    "waveform_clipped": false,
+    "grid_clipped": false,
+    "calibration_clipped": false,
+    "panel_completeness_check": "PASS",
+    "overall_detection_score": 1.1931631984535271,
+    "panel_tightness_score": 100.0,
+    "boundary_margin": {
+        "left": 0.0,
+        "right": 0.0,
+        "top": 0.0,
+        "bottom": 0.0
+    },
+    "expansion_px": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+    },
+    "grid_error": {
+        "left": 0.0,
+        "right": 8.666637777874074,
+        "top": 4.749988125029688,
+        "bottom": 5.249986875032813
+    },
+    "estimated_unrelated_content_ratio": 0.4405233480265296,
+    "extraneous_ink_ratio": 0.0,
+    "extraneous_text_ratio": 0.0,
+    "status": "PASS"
+}

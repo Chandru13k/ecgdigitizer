@@ -1,0 +1,57 @@
+{
+    "stage": "5.1",
+    "leads": {
+        "I": {
+            "mask_pixels": 6955,
+            "centerline_valid_points": 713
+        },
+        "II": {
+            "mask_pixels": 6320,
+            "centerline_valid_points": 718
+        },
+        "III": {
+            "mask_pixels": 4961,
+            "centerline_valid_points": 718
+        },
+        "aVR": {
+            "mask_pixels": 6180,
+            "centerline_valid_points": 716
+        },
+        "aVL": {
+            "mask_pixels": 5725,
+            "centerline_valid_points": 716
+        },
+        "aVF": {
+            "mask_pixels": 5011,
+            "centerline_valid_points": 716
+        },
+        "V1": {
+            "mask_pixels": 5742,
+            "centerline_valid_points": 715
+        },
+        "V2": {
+            "mask_pixels": 8081,
+            "centerline_valid_points": 714
+        },
+        "V3": {
+            "mask_pixels": 12401,
+            "centerline_valid_points": 716
+        },
+        "V4": {
+            "mask_pixels": 7963,
+            "centerline_valid_points": 715
+        },
+        "V5": {
+            "mask_pixels": 7173,
+            "centerline_valid_points": 717
+        },
+        "V6": {
+            "mask_pixels": 5998,
+            "centerline_valid_points": 717
+        },
+        "Rhythm_II": {
+            "mask_pixels": 25253,
+            "centerline_valid_points": 2870
+        }
+    }
+}

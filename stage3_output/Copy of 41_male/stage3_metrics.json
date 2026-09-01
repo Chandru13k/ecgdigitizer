@@ -1,0 +1,310 @@
+{
+    "stage": "3",
+    "input_width": 3508,
+    "input_height": 2481,
+    "active_panel_width": 2916,
+    "active_panel_height": 1398,
+    "grid_spacing_x": 23.0,
+    "grid_spacing_y": 20,
+    "spacing_confidence_x": 0.07098765432098765,
+    "spacing_confidence_y": 0.9356223175965666,
+    "intersection_candidate_count": 3602,
+    "repaired_pixel_count": 0,
+    "output_width": 2916,
+    "output_height": 1398,
+    "char_removal_expected": 12,
+    "char_removal_detected_before": 12,
+    "char_removal_detected_after": 1,
+    "char_removal_residual_pixels": 0,
+    "char_removal_status": "FAIL",
+    "ecg_pixels_preserved": 84046,
+    "ecg_pixels_lost": 18377,
+    "number_of_vertical_lines_detected": 3,
+    "vertical_lines_details": [
+        {
+            "x_coordinate": 738,
+            "confidence": 1.0
+        },
+        {
+            "x_coordinate": 1458,
+            "confidence": 1.0
+        },
+        {
+            "x_coordinate": 2178,
+            "confidence": 1.0
+        }
+    ],
+    "separator_x_coordinates": [
+        738,
+        1458,
+        2178
+    ],
+    "separator_confidences": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "estimated_separator_spacing": 720.0,
+    "periodicity_confidence": 1.0,
+    "calibration_detection_confidence": 1.0,
+    "calibration_bounding_box": [
+        140,
+        1318,
+        500,
+        1398
+    ],
+    "label_retention_details": {
+        "I": "removed",
+        "aVR": "removed",
+        "V1": "removed",
+        "V4": "removed",
+        "II": "removed",
+        "aVL": "removed",
+        "V2": "removed",
+        "V5": "retained",
+        "III": "removed",
+        "aVF": "removed",
+        "V3": "removed",
+        "V6": "removed"
+    },
+    "width_variance_across_leads": 0.0,
+    "mistaken_waveform_as_separator": 0,
+    "candidate_decision_details": {
+        "738": {
+            "x": 738,
+            "conf": 1.0,
+            "status": "ACCEPTED",
+            "reason": "Layout template locked"
+        },
+        "1458": {
+            "x": 1458,
+            "conf": 1.0,
+            "status": "ACCEPTED",
+            "reason": "Layout template locked"
+        },
+        "2178": {
+            "x": 2178,
+            "conf": 1.0,
+            "status": "ACCEPTED",
+            "reason": "Layout template locked"
+        }
+    },
+    "candidate_ecg_pixels": 102423,
+    "separator_pixels_removed": 10524,
+    "calibration_pixels_removed": 945,
+    "text_pixels_removed": 6371,
+    "interpolated_pixels_added": 0,
+    "total_pixels_removed": 18377,
+    "final_ecg_pixels": 84046,
+    "ecg_pixel_loss_ratio": 0.17942259062905794,
+    "per_lead_pixel_retention": {
+        "I": {
+            "candidate_pixels": 4502,
+            "final_pixels": 3621,
+            "removed_pixels": 881,
+            "retention_ratio": 0.8043091959129276,
+            "geometry_candidate": {
+                "min_y": 30,
+                "max_y": 330,
+                "amplitude": 300
+            },
+            "geometry_final": {
+                "min_y": 30,
+                "max_y": 330,
+                "amplitude": 300
+            }
+        },
+        "aVR": {
+            "candidate_pixels": 6893,
+            "final_pixels": 5066,
+            "removed_pixels": 1827,
+            "retention_ratio": 0.7349484984767155,
+            "geometry_candidate": {
+                "min_y": 40,
+                "max_y": 317,
+                "amplitude": 277
+            },
+            "geometry_final": {
+                "min_y": 153,
+                "max_y": 317,
+                "amplitude": 164
+            }
+        },
+        "V1": {
+            "candidate_pixels": 6511,
+            "final_pixels": 5095,
+            "removed_pixels": 1416,
+            "retention_ratio": 0.7825218860390108,
+            "geometry_candidate": {
+                "min_y": 40,
+                "max_y": 330,
+                "amplitude": 290
+            },
+            "geometry_final": {
+                "min_y": 141,
+                "max_y": 330,
+                "amplitude": 189
+            }
+        },
+        "V4": {
+            "candidate_pixels": 7528,
+            "final_pixels": 6103,
+            "removed_pixels": 1425,
+            "retention_ratio": 0.8107066950053134,
+            "geometry_candidate": {
+                "min_y": 0,
+                "max_y": 330,
+                "amplitude": 330
+            },
+            "geometry_final": {
+                "min_y": 0,
+                "max_y": 330,
+                "amplitude": 330
+            }
+        },
+        "II": {
+            "candidate_pixels": 6062,
+            "final_pixels": 4703,
+            "removed_pixels": 1359,
+            "retention_ratio": 0.7758165621906962,
+            "geometry_candidate": {
+                "min_y": 0,
+                "max_y": 525,
+                "amplitude": 525
+            },
+            "geometry_final": {
+                "min_y": 78,
+                "max_y": 282,
+                "amplitude": 204
+            }
+        },
+        "aVL": {
+            "candidate_pixels": 7705,
+            "final_pixels": 4890,
+            "removed_pixels": 2815,
+            "retention_ratio": 0.6346528228423102,
+            "geometry_candidate": {
+                "min_y": 0,
+                "max_y": 525,
+                "amplitude": 525
+            },
+            "geometry_final": {
+                "min_y": 0,
+                "max_y": 525,
+                "amplitude": 525
+            }
+        },
+        "V2": {
+            "candidate_pixels": 11661,
+            "final_pixels": 9489,
+            "removed_pixels": 2172,
+            "retention_ratio": 0.8137381013635194,
+            "geometry_candidate": {
+                "min_y": 0,
+                "max_y": 525,
+                "amplitude": 525
+            },
+            "geometry_final": {
+                "min_y": 0,
+                "max_y": 525,
+                "amplitude": 525
+            }
+        },
+        "V5": {
+            "candidate_pixels": 10720,
+            "final_pixels": 9153,
+            "removed_pixels": 1567,
+            "retention_ratio": 0.8538246268656716,
+            "geometry_candidate": {
+                "min_y": 0,
+                "max_y": 525,
+                "amplitude": 525
+            },
+            "geometry_final": {
+                "min_y": 15,
+                "max_y": 525,
+                "amplitude": 510
+            }
+        },
+        "III": {
+            "candidate_pixels": 4908,
+            "final_pixels": 3257,
+            "removed_pixels": 1651,
+            "retention_ratio": 0.6636104319478403,
+            "geometry_candidate": {
+                "min_y": 0,
+                "max_y": 392,
+                "amplitude": 392
+            },
+            "geometry_final": {
+                "min_y": 182,
+                "max_y": 280,
+                "amplitude": 98
+            }
+        },
+        "aVF": {
+            "candidate_pixels": 7460,
+            "final_pixels": 4736,
+            "removed_pixels": 2724,
+            "retention_ratio": 0.6348525469168901,
+            "geometry_candidate": {
+                "min_y": 0,
+                "max_y": 392,
+                "amplitude": 392
+            },
+            "geometry_final": {
+                "min_y": 129,
+                "max_y": 281,
+                "amplitude": 152
+            }
+        },
+        "V3": {
+            "candidate_pixels": 12264,
+            "final_pixels": 10078,
+            "removed_pixels": 2186,
+            "retention_ratio": 0.8217547292889759,
+            "geometry_candidate": {
+                "min_y": 0,
+                "max_y": 399,
+                "amplitude": 399
+            },
+            "geometry_final": {
+                "min_y": 0,
+                "max_y": 399,
+                "amplitude": 399
+            }
+        },
+        "V6": {
+            "candidate_pixels": 8084,
+            "final_pixels": 6693,
+            "removed_pixels": 1391,
+            "retention_ratio": 0.8279317169717961,
+            "geometry_candidate": {
+                "min_y": 0,
+                "max_y": 392,
+                "amplitude": 392
+            },
+            "geometry_final": {
+                "min_y": 0,
+                "max_y": 281,
+                "amplitude": 281
+            }
+        }
+    },
+    "residual_separator_pixels": 0,
+    "stage3_5_classifications": {
+        "I": "already_removed",
+        "aVR": "already_removed",
+        "V1": "already_removed",
+        "V4": "already_removed",
+        "II": "already_removed",
+        "aVL": "already_removed",
+        "V2": "already_removed",
+        "V5": "partially overlapped",
+        "III": "already_removed",
+        "aVF": "already_removed",
+        "V3": "already_removed",
+        "V6": "already_removed"
+    },
+    "stage3_5_pixels_removed": 537
+}

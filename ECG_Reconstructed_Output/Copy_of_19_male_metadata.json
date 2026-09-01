@@ -1,0 +1,61 @@
+{
+    "File_Name": "Copy_of_19_male",
+    "DPI": 300,
+    "Sampling_Frequency_Hz": 250.0,
+    "Paper_Speed_mms": 25.0,
+    "Voltage_Scale_mm_mV": 10.0,
+    "Reconstruction_Validation": {
+        "I": {
+            "SNR_dB": 24.89212099370565,
+            "Beats_Detected": 4
+        },
+        "aVR": {
+            "SNR_dB": 33.23968578643715,
+            "Beats_Detected": 2
+        },
+        "V1": {
+            "SNR_dB": 23.68941604612798,
+            "Beats_Detected": 2
+        },
+        "V4": {
+            "SNR_dB": 25.079732003462922,
+            "Beats_Detected": 5
+        },
+        "II": {
+            "SNR_dB": 27.401891663969252,
+            "Beats_Detected": 3
+        },
+        "aVL": {
+            "SNR_dB": 18.735887828313878,
+            "Beats_Detected": 3
+        },
+        "V2": {
+            "SNR_dB": 30.098315318024603,
+            "Beats_Detected": 2
+        },
+        "V5": {
+            "SNR_dB": 20.78430840091013,
+            "Beats_Detected": 4
+        },
+        "III": {
+            "SNR_dB": 18.726359754783523,
+            "Beats_Detected": 6
+        },
+        "aVF": {
+            "SNR_dB": 20.490778437911917,
+            "Beats_Detected": 4
+        },
+        "V3": {
+            "SNR_dB": 16.58323619632328,
+            "Beats_Detected": 6
+        },
+        "V6": {
+            "SNR_dB": 22.98861379159263,
+            "Beats_Detected": 4
+        },
+        "II_rhythm": {
+            "SNR_dB": 22.07895608057475,
+            "Beats_Detected": 2
+        }
+    }
+}

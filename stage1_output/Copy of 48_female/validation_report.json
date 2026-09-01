@@ -1,0 +1,11 @@
+{
+    "overall_status": "PASS",
+    "page_validations": [
+        {
+            "page_number": 1,
+            "status": "PASS",
+            "aspect_ratio_error": 0.00032960047860752795,
+            "reasons": []
+        }
+    ]
+}

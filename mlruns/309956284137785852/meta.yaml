@@ -1,0 +1,9 @@
+artifact_location: file:///C:/Users/Chandru/OneDrive/Desktop/6th sem/trial/mlruns/309956284137785852
+creation_time: 1786778298719
+effective_trace_archival_retention: null
+experiment_id: '309956284137785852'
+last_update_time: 1786778298719
+lifecycle_stage: active
+name: ECG_Stage5_Ablations
+trace_location: null
+workspace: default

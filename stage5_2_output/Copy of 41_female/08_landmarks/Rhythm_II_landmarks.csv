@@ -1,0 +1,13 @@
+landmark,beat_index,x_pixel,y_pixel,confidence,status,detectors_supporting,detectors_disagreeing,raw_candidate_x,neurokit_candidate_x,cwt_candidate_x
+R_peak,0,194,194.1256222547584,0.9,accepted,"raw_morphology,neurokit",none,194,194,
+R_peak,1,442,200.12156978459723,0.9,accepted,"raw_morphology,neurokit",none,442,442,
+R_peak,2,676,202.89299438368312,0.9,accepted,"raw_morphology,neurokit",none,676,676,
+R_peak,3,886,194.809009009009,0.9,accepted,"raw_morphology,neurokit",none,886,886,
+R_peak,4,1096,193.78454996456415,0.9,accepted,"raw_morphology,neurokit",none,1096,1096,
+R_peak,5,1324,198.73397913561848,0.9,accepted,"raw_morphology,neurokit",none,1324,1324,
+R_peak,6,1552,201.85887194383926,0.9,accepted,"raw_morphology,neurokit",none,1552,1552,
+R_peak,7,1774,205.4037330605983,0.9,accepted,"raw_morphology,neurokit",none,1774,1774,
+R_peak,8,1987,203.75164216452924,0.9,accepted,"raw_morphology,neurokit",none,1987,1987,
+R_peak,9,2199,197.1980198019802,0.9,accepted,"raw_morphology,neurokit",none,2199,2199,
+R_peak,10,2412,194.67803580067732,0.9,accepted,"raw_morphology,neurokit",none,2412,2412,
+R_peak,11,2647,196.67844291789336,0.9,accepted,"raw_morphology,neurokit",none,2647,2647,

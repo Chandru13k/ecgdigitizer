@@ -1,0 +1,36 @@
+{
+    "input_image": "stage1_output\\Copy of 28_female\\page_001.png",
+    "image_width": 3508,
+    "image_height": 2481,
+    "stage": "stage2_1",
+    "detector_version": "stage2.1",
+    "source_sha256": "acc771f021f91aaeea5e683ed5e8d3d8310129be9f2656a5b8522c1a2139dcff",
+    "config": {
+        "pad_x": 17,
+        "pad_y": 12,
+        "max_expand_x": 105,
+        "max_expand_y": 74
+    },
+    "ecg_panel_bbox": {
+        "x1": 209,
+        "y1": 369,
+        "x2": 3244,
+        "y2": 2027
+    },
+    "ecg_panel_width": 3035,
+    "ecg_panel_height": 1658,
+    "panel_area_ratio": 0.5781717564321225,
+    "grid_density": 0.4423288414417243,
+    "waveform_density": 0.018606804808397406,
+    "waveform_clipping_detected": true,
+    "panel_completeness_check": "PASS",
+    "overall_detection_score": 1.17374356109951,
+    "boundary_margin": {
+        "left": 17,
+        "right": 17,
+        "top": 12,
+        "bottom": 12
+    },
+    "estimated_unrelated_content_ratio": 0.4218282435678775,
+    "status": "PASS"
+}
