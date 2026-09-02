@@ -34,7 +34,7 @@ def extract_robust_centerline(mask, roi_gray):
     df = pd.DataFrame(centerline)
     return df
 
-def run_stage5(case, model, device):
+def run_stage5(case, model, device, checkpoint_info=None):
     print(f"Running Stage 5 Inference for {case}...")
     
     stage4_ref_path = f"stage4_output/{case}/01_stage3_reference.png"
@@ -70,6 +70,8 @@ def run_stage5(case, model, device):
     
     debug_img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
     metrics = {"stage": "5.1", "leads": {}}
+    if checkpoint_info:
+        metrics["checkpoint"] = checkpoint_info
     
     for lead, data in rois.items():
         x1, x2 = data['x_start'], data['x_end']
@@ -173,8 +175,31 @@ def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = UNetPlusPlusResNet18(in_channels=1, out_channels=1).to(device)
     
+    checkpoint_info = None
     if os.path.exists("stage5_best_model.pth"):
+        import hashlib
+        import time
         model.load_state_dict(torch.load("stage5_best_model.pth", map_location=device))
+        
+        # Calculate SHA256
+        with open("stage5_best_model.pth", "rb") as f:
+            file_hash = hashlib.sha256(f.read()).hexdigest()
+            
+        file_stats = os.stat("stage5_best_model.pth")
+        mod_time = time.ctime(file_stats.st_mtime)
+        file_size = file_stats.st_size
+        
+        checkpoint_info = {
+            "path": "stage5_best_model.pth",
+            "sha256": file_hash,
+            "size_bytes": file_size,
+            "mod_time": mod_time,
+            "architecture": "UNetPlusPlusResNet18"
+        }
+        
+        print(f"Loaded checkpoint: stage5_best_model.pth")
+        print(f"SHA256: {file_hash}")
+        print(f"Modified: {mod_time}")
     else:
         print("Warning: stage5_best_model.pth not found. Running with untrained weights!")
         
@@ -186,7 +211,7 @@ def main():
         cases = [d for d in os.listdir("stage4_output") if os.path.isdir(os.path.join("stage4_output", d))]
     
     for case in cases:
-        run_stage5(case, model, device)
+        run_stage5(case, model, device, checkpoint_info)
 
 if __name__ == "__main__":
     main()

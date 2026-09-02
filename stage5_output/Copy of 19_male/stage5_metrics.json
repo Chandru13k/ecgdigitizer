@@ -2,56 +2,63 @@
     "stage": "5.1",
     "leads": {
         "I": {
-            "mask_pixels": 6955,
-            "centerline_valid_points": 713
+            "mask_pixels": 14674,
+            "centerline_valid_points": 738
         },
         "II": {
-            "mask_pixels": 6320,
-            "centerline_valid_points": 718
+            "mask_pixels": 13707,
+            "centerline_valid_points": 738
         },
         "III": {
-            "mask_pixels": 4961,
-            "centerline_valid_points": 718
+            "mask_pixels": 11233,
+            "centerline_valid_points": 738
         },
         "aVR": {
-            "mask_pixels": 6180,
-            "centerline_valid_points": 716
+            "mask_pixels": 13205,
+            "centerline_valid_points": 720
         },
         "aVL": {
-            "mask_pixels": 5725,
-            "centerline_valid_points": 716
+            "mask_pixels": 12444,
+            "centerline_valid_points": 720
         },
         "aVF": {
-            "mask_pixels": 5011,
-            "centerline_valid_points": 716
+            "mask_pixels": 11297,
+            "centerline_valid_points": 720
         },
         "V1": {
-            "mask_pixels": 5742,
-            "centerline_valid_points": 715
+            "mask_pixels": 12175,
+            "centerline_valid_points": 720
         },
         "V2": {
-            "mask_pixels": 8081,
-            "centerline_valid_points": 714
+            "mask_pixels": 17602,
+            "centerline_valid_points": 720
         },
         "V3": {
-            "mask_pixels": 12401,
-            "centerline_valid_points": 716
+            "mask_pixels": 25579,
+            "centerline_valid_points": 720
         },
         "V4": {
-            "mask_pixels": 7963,
-            "centerline_valid_points": 715
+            "mask_pixels": 16630,
+            "centerline_valid_points": 738
         },
         "V5": {
-            "mask_pixels": 7173,
-            "centerline_valid_points": 717
+            "mask_pixels": 15315,
+            "centerline_valid_points": 738
         },
         "V6": {
-            "mask_pixels": 5998,
-            "centerline_valid_points": 717
+            "mask_pixels": 13353,
+            "centerline_valid_points": 738
         },
         "Rhythm_II": {
-            "mask_pixels": 25253,
-            "centerline_valid_points": 2870
+            "mask_pixels": 54450,
+            "centerline_valid_points": 2916
         }
+    },
+    "checkpoint": {
+        "path": "stage5_best_model.pth",
+        "sha256": "4c83a9993721bcb277989bc8954723227c2a07ed60c4c2de46b40c96cd73b46a",
+        "size_bytes": 57388650,
+        "mod_time": "Wed Sep  2 11:26:40 2026",
+        "architecture": "UNetPlusPlusResNet18"
     }
 }

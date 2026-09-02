@@ -14,11 +14,11 @@
     "output_height": 1406,
     "char_removal_expected": 12,
     "char_removal_detected_before": 12,
-    "char_removal_detected_after": 2,
+    "char_removal_detected_after": 3,
     "char_removal_residual_pixels": 0,
     "char_removal_status": "FAIL",
-    "ecg_pixels_preserved": 66112,
-    "ecg_pixels_lost": 18306,
+    "ecg_pixels_preserved": 67056,
+    "ecg_pixels_lost": 17362,
     "number_of_vertical_lines_detected": 3,
     "vertical_lines_details": [
         {
@@ -94,9 +94,9 @@
     "calibration_pixels_removed": 945,
     "text_pixels_removed": 5710,
     "interpolated_pixels_added": 0,
-    "total_pixels_removed": 18286,
-    "final_ecg_pixels": 66112,
-    "ecg_pixel_loss_ratio": 0.21661257077874388,
+    "total_pixels_removed": 17342,
+    "final_ecg_pixels": 67056,
+    "ecg_pixel_loss_ratio": 0.2054301215380606,
     "per_lead_pixel_retention": {
         "I": {
             "candidate_pixels": 4194,
@@ -306,5 +306,5 @@
         "V3": "already_removed",
         "V6": "already_removed"
     },
-    "stage3_5_pixels_removed": 1094
+    "stage3_5_pixels_removed": 150
 }

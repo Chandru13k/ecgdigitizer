@@ -2,56 +2,56 @@
     "stage": "5.1",
     "leads": {
         "I": {
-            "mask_pixels": 3916,
-            "centerline_valid_points": 652
+            "mask_pixels": 5586,
+            "centerline_valid_points": 717
         },
         "II": {
-            "mask_pixels": 5019,
-            "centerline_valid_points": 628
+            "mask_pixels": 7918,
+            "centerline_valid_points": 718
         },
         "III": {
-            "mask_pixels": 3819,
-            "centerline_valid_points": 646
+            "mask_pixels": 6443,
+            "centerline_valid_points": 719
         },
         "aVR": {
-            "mask_pixels": 4456,
-            "centerline_valid_points": 680
+            "mask_pixels": 6127,
+            "centerline_valid_points": 715
         },
         "aVL": {
-            "mask_pixels": 3486,
-            "centerline_valid_points": 687
+            "mask_pixels": 4960,
+            "centerline_valid_points": 715
         },
         "aVF": {
-            "mask_pixels": 4039,
-            "centerline_valid_points": 666
+            "mask_pixels": 6493,
+            "centerline_valid_points": 716
         },
         "V1": {
-            "mask_pixels": 3370,
-            "centerline_valid_points": 695
+            "mask_pixels": 4576,
+            "centerline_valid_points": 715
         },
         "V2": {
-            "mask_pixels": 5004,
-            "centerline_valid_points": 617
+            "mask_pixels": 8936,
+            "centerline_valid_points": 715
         },
         "V3": {
-            "mask_pixels": 2979,
-            "centerline_valid_points": 591
+            "mask_pixels": 12008,
+            "centerline_valid_points": 715
         },
         "V4": {
-            "mask_pixels": 7638,
-            "centerline_valid_points": 688
+            "mask_pixels": 11763,
+            "centerline_valid_points": 720
         },
         "V5": {
-            "mask_pixels": 6894,
-            "centerline_valid_points": 680
+            "mask_pixels": 10806,
+            "centerline_valid_points": 720
         },
         "V6": {
-            "mask_pixels": 5861,
-            "centerline_valid_points": 664
+            "mask_pixels": 8777,
+            "centerline_valid_points": 720
         },
         "Rhythm_II": {
-            "mask_pixels": 20383,
-            "centerline_valid_points": 2679
+            "mask_pixels": 29968,
+            "centerline_valid_points": 2865
         }
     }
 }

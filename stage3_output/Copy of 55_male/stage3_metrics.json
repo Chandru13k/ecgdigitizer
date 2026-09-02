@@ -14,11 +14,11 @@
     "output_height": 1420,
     "char_removal_expected": 12,
     "char_removal_detected_before": 12,
-    "char_removal_detected_after": 6,
+    "char_removal_detected_after": 7,
     "char_removal_residual_pixels": 0,
     "char_removal_status": "FAIL",
-    "ecg_pixels_preserved": 87056,
-    "ecg_pixels_lost": 18790,
+    "ecg_pixels_preserved": 89484,
+    "ecg_pixels_lost": 16362,
     "number_of_vertical_lines_detected": 3,
     "vertical_lines_details": [
         {
@@ -94,9 +94,9 @@
     "calibration_pixels_removed": 945,
     "text_pixels_removed": 4270,
     "interpolated_pixels_added": 0,
-    "total_pixels_removed": 18780,
-    "final_ecg_pixels": 87056,
-    "ecg_pixel_loss_ratio": 0.1774275834703248,
+    "total_pixels_removed": 16352,
+    "final_ecg_pixels": 89484,
+    "ecg_pixel_loss_ratio": 0.1544885966404021,
     "per_lead_pixel_retention": {
         "I": {
             "candidate_pixels": 6162,
@@ -306,5 +306,5 @@
         "V3": "partially overlapped",
         "V6": "already_removed"
     },
-    "stage3_5_pixels_removed": 3031
+    "stage3_5_pixels_removed": 603
 }

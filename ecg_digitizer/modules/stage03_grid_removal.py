@@ -1811,6 +1811,11 @@ def run_stage3(image, metrics_path):
     diagnostic_images.update(s35_diags)
     diagnostic_images["09_stage3_final_clean_ecg"] = stage3_final_clean_ecg
     
+    # EXPLICIT CHECKPOINTS FOR D1-D7 FORENSIC AUDIT:
+    diagnostic_images["C0_candidate"] = candidate_ecg_mask
+    diagnostic_images["C1_post_isolated_label"] = final_ecg_mask
+    diagnostic_images["C2_post_overlap_label"] = stage3_5_mask
+    
     final_clean_ecg = np.full_like(active_panel, 255)
     final_clean_ecg[stage3_5_mask > 0] = (0, 0, 0)
     

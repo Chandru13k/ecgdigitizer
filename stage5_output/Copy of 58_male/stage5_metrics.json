@@ -6,31 +6,31 @@
             "centerline_valid_points": 717
         },
         "II": {
-            "mask_pixels": 6576,
-            "centerline_valid_points": 718
-        },
-        "III": {
-            "mask_pixels": 5819,
+            "mask_pixels": 6019,
             "centerline_valid_points": 716
         },
+        "III": {
+            "mask_pixels": 5435,
+            "centerline_valid_points": 712
+        },
         "aVR": {
-            "mask_pixels": 8091,
+            "mask_pixels": 7712,
             "centerline_valid_points": 713
         },
         "aVL": {
-            "mask_pixels": 7451,
-            "centerline_valid_points": 715
+            "mask_pixels": 7100,
+            "centerline_valid_points": 712
         },
         "aVF": {
-            "mask_pixels": 6470,
-            "centerline_valid_points": 715
+            "mask_pixels": 6174,
+            "centerline_valid_points": 714
         },
         "V1": {
             "mask_pixels": 6344,
             "centerline_valid_points": 713
         },
         "V2": {
-            "mask_pixels": 9329,
+            "mask_pixels": 9296,
             "centerline_valid_points": 716
         },
         "V3": {
@@ -38,15 +38,15 @@
             "centerline_valid_points": 715
         },
         "V4": {
-            "mask_pixels": 13532,
+            "mask_pixels": 13474,
             "centerline_valid_points": 720
         },
         "V5": {
-            "mask_pixels": 11154,
+            "mask_pixels": 11121,
             "centerline_valid_points": 721
         },
         "V6": {
-            "mask_pixels": 8268,
+            "mask_pixels": 8270,
             "centerline_valid_points": 721
         },
         "Rhythm_II": {

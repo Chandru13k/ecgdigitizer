@@ -26,11 +26,11 @@
             "centerline_valid_points": 718
         },
         "V1": {
-            "mask_pixels": 6048,
+            "mask_pixels": 5967,
             "centerline_valid_points": 714
         },
         "V2": {
-            "mask_pixels": 8653,
+            "mask_pixels": 8528,
             "centerline_valid_points": 715
         },
         "V3": {

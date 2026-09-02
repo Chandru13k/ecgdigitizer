@@ -17,8 +17,8 @@
     "char_removal_detected_after": 12,
     "char_removal_residual_pixels": 0,
     "char_removal_status": "FAIL",
-    "ecg_pixels_preserved": 114911,
-    "ecg_pixels_lost": 14343,
+    "ecg_pixels_preserved": 116352,
+    "ecg_pixels_lost": 12902,
     "number_of_vertical_lines_detected": 3,
     "vertical_lines_details": [
         {
@@ -94,9 +94,9 @@
     "calibration_pixels_removed": 945,
     "text_pixels_removed": 0,
     "interpolated_pixels_added": 0,
-    "total_pixels_removed": 14343,
-    "final_ecg_pixels": 114911,
-    "ecg_pixel_loss_ratio": 0.11096755226143871,
+    "total_pixels_removed": 12902,
+    "final_ecg_pixels": 116352,
+    "ecg_pixel_loss_ratio": 0.09981896111532332,
     "per_lead_pixel_retention": {
         "I": {
             "candidate_pixels": 7706,
@@ -306,5 +306,5 @@
         "V3": "fully fused",
         "V6": "fully fused"
     },
-    "stage3_5_pixels_removed": 2872
+    "stage3_5_pixels_removed": 1431
 }
