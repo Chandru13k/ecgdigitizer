@@ -21,5 +21,9 @@ results_e24/
 results_e32/
 pseudo_labels/
 experiments/
-experiments_opt/
 ecgdigi/
+multipipeline_output/
+e1_e5_output/
+e4_optimization_output/
+*.png
+
