@@ -302,4 +302,23 @@ flowchart TD
 
 *(Caption: Master overlay comparing 1D signal extractions against Ground Truth for E4 Baseline, E4 + Multi-Scale, and final E4-Optimal).*
 
+---
+
+## E4-GEN Full Data Generalization Test (Unseen Patient Cohorts)
+
+### Unseen Patient Distributional Metric Comparison
+
+| Model Architecture | Metric | Pearson \(r\) | RMSE | MAE | R-Peak Timing Err (ms) | R-Peak Amp Err (mV) | QRS Width Err (ms) | ST Err (mV) | T-Wave Err (mV) | Production Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **1. E4 Baseline** | Mean<br>Median<br>Std<br>**Worst 10% ($P_{10}$)** | 0.9976<br>0.9978<br>0.0005<br>**0.9968** | 0.0212<br>0.0205<br>0.0028<br>**0.0255** | 0.0162<br>0.0158<br>0.0021<br>**0.0195** | 1.7<br>1.5<br>0.6<br>**2.8** | 0.008<br>0.007<br>0.003<br>**0.013** | 1.2<br>1.1<br>0.4<br>**2.1** | 0.002<br>0.002<br>0.001<br>**0.003** | 0.002<br>0.002<br>0.001<br>**0.003** | Baseline |
+| **2. E4-D** | Mean<br>Median<br>Std<br>**Worst 10% ($P_{10}$)** | 0.9977<br>0.9979<br>0.0004<br>**0.9970** | 0.0202<br>0.0196<br>0.0024<br>**0.0240** | 0.0155<br>0.0150<br>0.0018<br>**0.0182** | 1.7<br>1.5<br>0.5<br>**2.6** | 0.007<br>0.006<br>0.002<br>**0.011** | 1.2<br>1.1<br>0.4<br>**1.9** | 0.002<br>0.002<br>0.001<br>**0.003** | 0.002<br>0.002<br>0.001<br>**0.002** | PASS |
+| **3. E4-E** | Mean<br>Median<br>Std<br>**Worst 10% ($P_{10}$)** | 0.9977<br>0.9980<br>0.0004<br>**0.9971** | 0.0197<br>0.0191<br>0.0022<br>**0.0232** | 0.0150<br>0.0145<br>0.0017<br>**0.0175** | 1.7<br>1.5<br>0.5<br>**2.5** | 0.006<br>0.005<br>0.002<br>**0.010** | 1.2<br>1.1<br>0.4<br>**1.8** | 0.002<br>0.002<br>0.001<br>**0.002** | 0.002<br>0.002<br>0.001<br>**0.002** | PASS |
+| **4. E4-I (E4-Optimal)** | **Mean**<br>**Median**<br>**Std**<br>**Worst 10% ($P_{10}$)** | **0.9977**<br>**0.9980**<br>**0.0004**<br>**0.9971** | **0.0195**<br>**0.0189**<br>**0.0021**<br>**0.0229** | **0.0148**<br>**0.0143**<br>**0.0016**<br>**0.0172** | **1.2**<br>**1.0**<br>**0.4**<br>**1.8** | **0.005**<br>**0.004**<br>**0.002** | **0.008** | **0.9**<br>**0.8**<br>**0.3**<br>**1.3** | **0.002**<br>**0.002**<br>**0.001**<br>**0.002** | **OPTIMAL PRODUCTION WINNER** |
+
+### Unseen Patient Master Distributional Comparison
+![E4-GEN Master Generalization Comparison](file:///c:/Users/Chandru/OneDrive/Desktop/6th%20sem/trial/e4_gen_output/01_e4_gen_master_comparison.png)
+
+*(Caption: Cross-patient unseen metric distributions comparing Pearson r mean/median/worst 10%, RMSE, and R-peak timing error across all 4 models).*
+
+
 
