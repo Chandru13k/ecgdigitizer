@@ -25,5 +25,7 @@ ecgdigi/
 multipipeline_output/
 e1_e5_output/
 e4_optimization_output/
+multicase_e4_output/
 *.png
+
 
