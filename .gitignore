@@ -28,7 +28,9 @@ e4_optimization_output/
 e4_copy19_full_panel_output/
 e4_copy22_full_panel_output/
 e4_gen_output/
+single_case_all_experiments_output/
 *.png
+
 
 
 
