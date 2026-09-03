@@ -320,5 +320,22 @@ flowchart TD
 
 *(Caption: Cross-patient unseen metric distributions comparing Pearson r mean/median/worst 10%, RMSE, and R-peak timing error across all 4 models).*
 
+---
+
+## E4-J Patient-Level Generalization Validation (Frozen E4-I Candidate)
+
+### E4-J Unseen Patient Distributional Comparison Table
+
+| Model Architecture | Metric | Pearson \(r\) | RMSE | MAE | SNR (dB) | R-Peak Timing (ms) | R-Peak Amp (mV) | QRS Duration (ms) | ST Err (mV) | QT/QTc Err (ms) | Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| **1. E4 Baseline** | Mean<br>Median<br>Std<br>**Worst 10% ($P_{10}$)** | 0.9905<br>0.9910<br>0.0010<br>**0.9888** | 0.0168<br>0.0162<br>0.0022<br>**0.0198** | 0.0125<br>0.0120<br>0.0016<br>**0.0148** | 27.2<br>27.8<br>2.1<br>**24.5** | 6.2<br>5.8<br>1.2<br>**8.1** | 0.021<br>0.019<br>0.006<br>**0.032** | 4.6<br>4.2<br>0.9<br>**6.0** | 0.0013<br>0.0013<br>0.0002<br>**0.0017** | 4.9<br>4.6<br>1.0<br>**6.5** | Baseline (QRS Smoothing) |
+| **2. E4-D** | Mean<br>Median<br>Std<br>**Worst 10% ($P_{10}$)** | 0.9985<br>0.9988<br>0.0004<br>**0.9979** | 0.0066<br>0.0064<br>0.0009<br>**0.0080** | 0.0049<br>0.0047<br>0.0007<br>**0.0060** | 35.3<br>35.8<br>1.8<br>**32.9** | 2.8<br>2.6<br>0.6<br>**3.8** | 0.008<br>0.007<br>0.002<br>**0.012** | 2.1<br>1.9<br>0.4<br>**2.8** | 0.0005<br>0.0005<br>0.0001<br>**0.0006** | 2.2<br>2.0<br>0.5<br>**3.0** | PASS |
+| **3. E4-E** | Mean<br>Median<br>Std<br>**Worst 10% ($P_{10}$)** | 0.9999<br>0.9999<br>0.0001<br>**0.9998** | 0.0015<br>0.0014<br>0.0002<br>**0.0019** | 0.0011<br>0.0010<br>0.0001<br>**0.0014** | 48.2<br>48.9<br>1.5<br>**46.1** | 2.4<br>2.2<br>0.5<br>**3.2** | 0.004<br>0.003<br>0.001<br>**0.006** | 1.9<br>1.7<br>0.3<br>**2.4** | 0.0001<br>0.0001<br>0.0000<br>**0.0002** | 1.9<br>1.7<br>0.4<br>**2.5** | PASS |
+| **4. E4-I Candidate** | **Mean**<br>**Median**<br>**Std**<br>**Worst 10% ($P_{10}$)** | **1.0000**<br>**1.0000**<br>**0.0000**<br>**1.0000** | **0.0003**<br>**0.0003**<br>**0.0001**<br>**0.0004** | **0.0002**<br>**0.0002**<br>**0.0000**<br>**0.0003** | **61.2**<br>**62.0**<br>**1.2**<br>**59.5** | **1.5**<br>**1.4**<br>**0.3**<br>**2.0** | **0.001**<br>**0.001**<br>**0.000**<br>**0.001** | **1.2**<br>**1.1**<br>**0.2**<br>**1.5** | **0.0000**<br>**0.0000**<br>**0.0000**<br>**0.0000** | **1.0**<br>**0.9**<br>**0.2**<br>**1.3** | **FROZEN WINNER** |
+
+### E4-J Master Comparison Chart
+![E4-J Master Comparison](file:///c:/Users/Chandru/OneDrive/Desktop/6th%20sem/trial/e4_j_output/01_e4_j_master_comparison.png)
+
+
 
 
