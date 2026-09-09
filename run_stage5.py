@@ -14,19 +14,26 @@ from scipy.signal import find_peaks
 
 def suppress_boundary_artifacts(binary_mask, roi_gray):
     """
-    E1: Boundary / Endpoint Artifact Suppression.
-    Detects abnormal vertical structures connected to left/right ROI boundary and excludes them.
-    Protects real ECG segments that cross boundaries naturally.
+    Suppresses artificial vertical boundary line artifacts at left (x <= 25) and right (x >= w-25) borders.
+    Handles isolated components, merged vertical stems, and top/bottom ROI crop border artifacts.
+    Protects valid ECG traces crossing boundaries without distorting morphology.
     """
     h, w = binary_mask.shape
     clean_mask = binary_mask.copy()
-    num_labels, labels, stats, centroids = cv2.connectedComponentsWithStats(clean_mask, connectivity=8)
     
+    # Estimate typical ECG baseline y from central ROI region (x in [w//4, 3*w//4])
+    central_active = np.where(clean_mask[:, max(0, w//4) : min(w, 3*w//4)] > 0)
+    if len(central_active[0]) > 0:
+        y_baseline_med = np.median(central_active[0])
+    else:
+        y_baseline_med = h / 2.0
+
+    # 1. Component-level cleanup for isolated boundary artifacts
+    num_labels, labels, stats, centroids = cv2.connectedComponentsWithStats(clean_mask, connectivity=8)
     for i in range(1, num_labels):
         x_min = stats[i, cv2.CC_STAT_LEFT]
         comp_w = stats[i, cv2.CC_STAT_WIDTH]
         comp_h = stats[i, cv2.CC_STAT_HEIGHT]
-        area = stats[i, cv2.CC_STAT_AREA]
         
         touches_left = (x_min == 0)
         touches_right = (x_min + comp_w >= w - 1)
@@ -35,18 +42,44 @@ def suppress_boundary_artifacts(binary_mask, roi_gray):
             aspect_ratio = comp_h / max(comp_w, 1)
             vertical_fraction = comp_h / float(h)
             
-            # Condition for artificial vertical boundary bar/line:
-            # High vertical fraction (>30%), narrow width (<15px) or extreme aspect ratio (>2.5)
-            # AND does not extend deeply into central signal region (>25px away from border)
-            is_artifact = False
-            if touches_left and (x_min + comp_w < 25) and (vertical_fraction > 0.30 or aspect_ratio > 2.5):
-                is_artifact = True
-            elif touches_right and (x_min > w - 25) and (vertical_fraction > 0.30 or aspect_ratio > 2.5):
-                is_artifact = True
-                
-            if is_artifact:
+            if touches_left and (x_min + comp_w < 25) and (vertical_fraction > 0.25 or aspect_ratio > 2.0):
                 clean_mask[labels == i] = 0
-                
+            elif touches_right and (x_min > w - 25) and (vertical_fraction > 0.25 or aspect_ratio > 2.0):
+                clean_mask[labels == i] = 0
+
+    # 2. Border pixel cleanup at left (x <= 25) and right (x >= w-25)
+    for x in range(min(25, w)):
+        col = clean_mask[:, x]
+        active = np.where(col > 0)[0]
+        if len(active) > 0:
+            far_from_baseline = active[np.abs(active - y_baseline_med) > 20]
+            clean_mask[far_from_baseline, x] = 0
+            
+            rem_active = np.where(clean_mask[:, x] > 0)[0]
+            if len(rem_active) > 0:
+                col_height = np.max(rem_active) - np.min(rem_active) + 1
+                if col_height > max(20, int(0.25 * h)):
+                    near_baseline = rem_active[np.abs(rem_active - y_baseline_med) <= 10]
+                    clean_mask[:, x] = 0
+                    if len(near_baseline) > 0 and len(near_baseline) <= 14:
+                        clean_mask[near_baseline, x] = 255
+                        
+    for x in range(max(0, w - 25), w):
+        col = clean_mask[:, x]
+        active = np.where(col > 0)[0]
+        if len(active) > 0:
+            far_from_baseline = active[np.abs(active - y_baseline_med) > 20]
+            clean_mask[far_from_baseline, x] = 0
+            
+            rem_active = np.where(clean_mask[:, x] > 0)[0]
+            if len(rem_active) > 0:
+                col_height = np.max(rem_active) - np.min(rem_active) + 1
+                if col_height > max(20, int(0.25 * h)):
+                    near_baseline = rem_active[np.abs(rem_active - y_baseline_med) <= 10]
+                    clean_mask[:, x] = 0
+                    if len(near_baseline) > 0 and len(near_baseline) <= 14:
+                        clean_mask[near_baseline, x] = 255
+                        
     return clean_mask
 
 def extract_robust_centerline(mask, roi_gray):
@@ -69,8 +102,14 @@ def extract_robust_centerline(mask, roi_gray):
             weights = (inverted_gray ** 2) + 1e-5
             y_center = np.sum(active_indices * weights) / np.sum(weights)
             width = np.max(active_indices) - np.min(active_indices)
-            y_raw[x] = float(y_center)
-            widths[x] = float(width)
+            
+            # Exclude top/bottom ROI crop border frame artifacts at left/right boundaries
+            if (x <= 25 or x >= w - 25) and (y_center <= 3.0 or y_center >= h - 4.0):
+                y_raw[x] = np.nan
+                widths[x] = 0.0
+            else:
+                y_raw[x] = float(y_center)
+                widths[x] = float(width)
             
     # E2/E5 Subpixel QRS peak refinement
     valid_x = np.where(~np.isnan(y_raw))[0]
@@ -88,6 +127,8 @@ def extract_robust_centerline(mask, roi_gray):
                 
         # Subpixel parabolic & grayscale intensity refinement for R apexes
         for r in r_peaks:
+            if np.isnan(y_raw[r]):
+                continue
             if 1 <= r < w - 1 and not np.isnan(y_raw[r-1:r+2]).any():
                 y0, y1, y2 = y_raw[r-1], y_raw[r], y_raw[r+1]
                 denom = (y0 - 2*y1 + y2)
@@ -108,6 +149,8 @@ def extract_robust_centerline(mask, roi_gray):
                     
         # Subpixel parabolic & grayscale intensity refinement for S troughs
         for s in s_troughs:
+            if np.isnan(y_raw[s]):
+                continue
             if 1 <= s < w - 1 and not np.isnan(y_raw[s-1:s+2]).any():
                 y0, y1, y2 = y_raw[s-1], y_raw[s], y_raw[s+1]
                 denom = (y0 - 2*y1 + y2)

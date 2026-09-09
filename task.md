@@ -1,16 +1,10 @@
-# Task Checklist: Stage 05 Waveform Refinement (E1–E5 Experiments)
+# Task Checklist: Eliminate Stage 05 Starting Vertical Line Artifact
 
-- [x] Create experiment branch `experiment/stage5-e1-e5-refinement`
-- [x] Implement E1–E5 Experiment Suite in `run_e1_e5_stage5_suite.py`
-  - [x] E1: Boundary / Endpoint Artifact Suppression
-  - [x] E2: R/S Subpixel Centerline Refinement
-  - [x] E3: QRS Geometry-Constrained Centerline
-  - [x] E4: Joint Q–R–S Path Reconstruction
-  - [x] E5: Hybrid Centerline + Original Image Evidence
-- [x] Evaluate metrics across all 5 experiments (R/S position errors, R-S interval, QRS width, RMSE, Correlation)
-- [x] Generate comparative diagnostic visual overlays for each lead
-- [x] Select winning method and integrate directly into `run_stage5.py`
-- [x] Execute full Stage 05 pipeline to update `stage5_output/`
-- [x] Run `audit_stage5.py` to confirm forensic compliance (PASSED)
-- [x] Document final results in `ECG_DIGITIZATION_COMPLETE_TECHNICAL_REPORT.md`
-- [x] Merge experiment branch into main
+- [x] Refine boundary artifact suppression in `run_stage5.py`
+  - [x] Detect & strip merged vertical stem pixels near borders ($x \in [0, 25]$ and $x \in [w-25, w-1]$)
+  - [x] Exclude top/bottom crop frame border pixels ($y=0$ or $y=h-1$) at boundaries
+  - [x] Leave non-signal initial columns as `NaN` without CoM mid-height spikes
+  - [x] Protect natural horizontal ECG traces crossing borders
+- [x] Regenerate `stage5_output/` across cases
+- [x] Audit output using `audit_stage5.py`
+- [x] Verify visual overlays and centerline plots for 0 starting vertical line artifacts (PASSED)
