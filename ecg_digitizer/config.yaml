@@ -1,0 +1,64 @@
+# ECG Digitizer System Configuration
+
+system:
+  dpi: 300
+  input_dir: "ECG_D"
+  output_dir: "ECG_Reconstructed_Output"
+  device: "cpu" # Options: cpu, cuda
+  debug_dir: "debug" # Will be created per-run inside output_dir
+
+m1_quality:
+  blur_threshold: 100.0        # Laplacian variance threshold
+  brightness_lower: 50.0       # Lower bound of mean grayscale
+  brightness_upper: 255.0      # Upper bound of mean grayscale
+
+m2_preprocessing:
+  clahe_clip: 2.0
+  clahe_grid: [8, 8]
+  bilateral_d: 9
+  bilateral_color: 75
+  bilateral_space: 75
+
+m3_geometry:
+  hough_threshold: 200
+  min_skew_angle: 0.5          # Minimum angle in degrees to apply rotation
+
+m4_layout:
+  lead_names:
+    - ["I", "aVR", "V1", "V4"]
+    - ["II", "aVL", "V2", "V5"]
+    - ["III", "aVF", "V3", "V6"]
+  rhythm_lead: "II_rhythm"
+
+m6_grid_removal:
+  color_method: "adaptive"      # Options: adaptive, hsv_red, morphology
+  adaptive_window: 51
+  adaptive_C: 10
+  morph_kernel_size: 5
+  protect_waveform: true
+
+m7_waveform_segmentation:
+  min_component_size: 30
+  continuity_threshold: 15
+
+m8_extraction:
+  dp_weight_jump: 1.0          # Cost weight for vertical jumps in DP tracing
+  dp_weight_dist: 1.0
+  gap_interpolation: true      # Interpolate over missing gaps from grid intersections
+
+m10_calibration:
+  fallback_dpi: 300
+  fallback_paper_speed: 25.0            # mm/s
+  fallback_voltage_scale: 10.0          # mm/mV
+  sampling_rate: 250.0         # Hz
+  auto_detect_grid: true
+
+m11_enhancement:
+  lowpass_cutoff: 40.0         # Hz
+  notch_freq: 50.0             # Hz
+  sampling_rate: 250.0         # Hz
+
+m12_validation:
+  expected_hr: 61              # External sanity check
+  min_confidence_pass: 0.85
+  min_confidence_warn: 0.50
