@@ -493,15 +493,27 @@ def execute_phase7_audit(cases, stage4_dir=Path("stage4_output"), stage5_dir=Pat
     return df_audit
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Master End-to-End ECG Digitization Pipeline (Stages 1 to 6)")
+    parser.add_argument("--input", default="ECG_D", help="Path to input PDF file or directory containing PDFs (default: ECG_D)")
+    args = parser.parse_args()
+    
     logger.info("================================================================================")
-    logger.info("STARTING MASTER END-TO-END ECG DIGITIZATION PIPELINE (ALL 133 CASES)")
+    logger.info("STARTING MASTER END-TO-END ECG DIGITIZATION PIPELINE")
     logger.info("================================================================================")
     start_time = time.time()
     
     # 1. Identify input files
-    pdf_files = sorted(glob.glob("ECG_D/*.pdf"))
+    input_path = Path(args.input)
+    if input_path.is_file() and input_path.suffix.lower() == ".pdf":
+        pdf_files = [str(input_path)]
+    elif input_path.is_dir():
+        pdf_files = sorted(glob.glob(str(input_path / "*.pdf")))
+    else:
+        pdf_files = sorted(glob.glob("ECG_D/*.pdf"))
+        
     cases = [Path(p).stem for p in pdf_files]
-    logger.info(f"Target Input Dataset: {len(pdf_files)} PDFs in ECG_D/\n")
+    logger.info(f"Target Input Dataset: {len(pdf_files)} PDFs from {input_path}\n")
     
     # MLflow Setup
     try:

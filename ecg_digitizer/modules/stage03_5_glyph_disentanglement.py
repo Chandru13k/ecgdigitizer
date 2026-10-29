@@ -21,6 +21,9 @@ def _analyze_overlap_case(roi_img, text_mask_roi):
     if np.sum(text_mask_roi > 0) > 20: 
         return "already_removed"
     
+    if roi_img is None or roi_img.size == 0 or roi_img.shape[0] == 0 or roi_img.shape[1] == 0:
+        return "not_found"
+        
     # In the candidate image, the text might be fused with the ECG.
     # Check connected components.
     num_l, lbls, sts, cents = cv2.connectedComponentsWithStats(roi_img, connectivity=8)

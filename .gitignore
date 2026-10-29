@@ -1,10 +1,12 @@
-external/
-comparative_output/
+# Python Bytecode and Cache
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 .pytest_cache/
-mlruns/
-*.pth
+.coverage
+htmlcov/
+
+# Pipeline Run Outputs
 stage1_output/
 stage2_output/
 stage2_1_output/
@@ -13,6 +15,18 @@ stage3_output/
 stage4_output/
 stage5_output/
 stage5_2_output/
+stage6_output/
+
+# Raw Data Directories
+ECG_D/
+ecg_data/
+ecg_data1/
+ecg_2_data/
+ECG_1D_Output/
+ECG_Reconstructed_Output/
+
+# Experimental Caches and Suites
+mlruns/
 ab_test_out/
 ab_test_out_internal/
 audit_s5_d5_output/
@@ -23,17 +37,42 @@ pseudo_labels/
 experiments/
 ecgdigi/
 multipipeline_output/
+comparative_output/
 e1_e5_output/
 e4_optimization_output/
 e4_copy19_full_panel_output/
 e4_copy22_full_panel_output/
 e4_gen_output/
+e4_real_cases_output/
+multicase_e4_output/
 single_case_all_experiments_output/
 e4_j_output/
-*.png
+experiments_opt/
+stage05_validation/
+stage06_validation/
+scratch/
 
+# Temporary and Log Files
+*.log
+master_pipeline_execution.log
+*.tmp
 
+# Loose Debug Images in Root
+crop_test.png
+crop_test2.png
+debug_out.png
+remnant_test.png
+test_rhythm_roi.png
+Copy_of_19_male_verification.png
+*.webp
 
+# Test output artifacts
+tests/*_audits/
+tests/*_outputs/
+tests/*.png
 
-
-
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
