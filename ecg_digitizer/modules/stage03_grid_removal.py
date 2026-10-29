@@ -1213,7 +1213,16 @@ def target_artifact_subtraction(candidate_ecg, spacing_x, spacing_y,
                 # Only remove start separator in Rhythm II, do not search for lead labels
                 continue
 
+            roi_y1 = max(0, min(roi_y1, ap_thresh.shape[0]))
+            roi_y2 = max(0, min(roi_y2, ap_thresh.shape[0]))
+            roi_x1 = max(0, min(roi_x1, ap_thresh.shape[1]))
+            roi_x2 = max(0, min(roi_x2, ap_thresh.shape[1]))
+            if roi_y1 >= roi_y2 or roi_x1 >= roi_x2:
+                continue
+
             roi_img = ap_thresh[roi_y1:roi_y2, roi_x1:roi_x2]
+            if roi_img.size == 0:
+                continue
             current_roi_thresh = roi_img.copy()
             total_char_mask = np.zeros_like(roi_img)
             
